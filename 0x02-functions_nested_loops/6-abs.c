@@ -1,5 +1,4 @@
 #include "holberton.h"
-
 /**
  *_abs - Check Holberton
  * @r: An integre input
@@ -8,8 +7,8 @@
  */
 int _abs(int r)
 {
-	if (r >= 0)
-		return (r);
-	else
-		return (r * -1);
+if (r >= 0)
+return (r);
+else
+return (r * -1);
 }
