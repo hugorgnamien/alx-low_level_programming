@@ -1,5 +1,5 @@
-#ifndef _MAIN_HEADER
-#define _MAIN_HEADER
+#ifndef _HOLBERTON_HEADER
+#define _HOLBERTON_HEADER
 int _putchar(char c);
 int _islower(int c);
 int _isalpha(int c);
