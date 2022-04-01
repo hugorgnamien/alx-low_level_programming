@@ -14,12 +14,12 @@ int main(int argc, char *argv[])
 int n, m, diff;
 if (argc != 3)
 {
-printf("Error\n");
+printf ("Error\n");
 return (1);
 }
 n = atoi(argv[1]);
 m = atoi(argv[2]);
 diff = n * m;
-printf("%i\n", diff);
+printf ("%i\n", diff);
 return (0);
 }
