@@ -1,49 +1,49 @@
 #include "main.h"
 /**
- * times_table - prints the 9 times table
- * Return: nothing
- */
-void times_table(void)
+  * print_times_table - Prints a multiplication table up to param
+  * @n: The number to be treated
+  *
+  * Return: Number matrix
+  */
+void print_times_table(int n)
 {
-int i, j, p;
-int k = 0;
-for (i = 0; i < 101; i++)
+int x, y, z;
+if (n >= 0 && n <= 14)
 {
-for (j = 0; j < 11; j++)
+for (x = 0; x <= n; x++)
 {
-p = j * k;
-if (p >= 0 && p <= 9)
+for (y = 0; y <= n; y++)
 {
-if (j == 0)
-_putchar(p + '0');
-else if (j == 10)
+z = x * y;
+if (z > 99)
 {
-_putchar('\n');
-k++;
+_putchar(',');
+_putchar(32);
+_putchar((z / 100) + '0');
+_putchar(((z / 10) % 10) + '0');
+_putchar((z % 10) + '0');
+}
+else if (z > 9)
+{
+_putchar(',');
+_putchar(32);
+_putchar(32);
+_putchar(((z / 10) % 10) + '0');
+_putchar((z % 10) + '0');
 }
 else
 {
+if (y != 0)
+{
 _putchar(',');
-_putchar(' ');
-_putchar(' ');
-_putchar(p + '0');
+_putchar(32);
+_putchar(32);
+_putchar(32);
+}
+_putchar(z + '0');
 }
 }
-else if (p >= 10)
-{
-if (j == 10)
-{
 _putchar('\n');
-k++;
-}
-else
-{
-_putchar(',');
-_putchar(' ');
-_putchar((p / 10) + '0');
-_putchar((p % 10) + '0');
-}
-}
 }
 }
 }
